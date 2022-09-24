@@ -1,6 +1,5 @@
 import argparse
 import os
-from pathlib import Path
 import warnings
 from typing import List, Optional, Tuple, Union, TYPE_CHECKING
 
@@ -286,9 +285,8 @@ def cli():
             write_vtt(result["segments"], file=vtt)
 
         # save SRT
-            audio_basename = Path(audio_path).stem
-            with open(Path(output_dir) / (audio_basename + ".srt"), "w", encoding="utf-8") as srt:
-                write_srt(result["segments"], file=srt)
+        with open(os.path.join(output_dir, audio_basename + ".srt"), "w", encoding="utf-8") as srt:
+            write_srt(result["segments"], file=srt)
 
 
 if __name__ == '__main__':
