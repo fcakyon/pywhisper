@@ -68,4 +68,4 @@ jobs:
 
       - name: CLI test
         run: |
-          pywhisper tests\jfk.flac --model base.en
+          pywhisper tests/jfk.flac --model base.en
