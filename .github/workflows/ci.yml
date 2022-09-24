@@ -64,4 +64,4 @@ jobs:
 
       - name: Unittest
         run: |
-          pytest
+          pytest tests
