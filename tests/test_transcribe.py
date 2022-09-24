@@ -5,7 +5,7 @@ import pytest
 import pywhisper
 
 
-@pytest.mark.parametrize('model_name', pywhisper.available_models())
+@pytest.mark.parametrize('model_name', ["tiny.en", "tiny", "base.en", "base"])
 def test_transcribe(model_name: str):
     model = pywhisper.load_model(model_name)
     audio_path = os.path.join(os.path.dirname(__file__), "jfk.flac")

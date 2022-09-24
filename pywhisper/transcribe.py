@@ -9,7 +9,7 @@ import torch
 from .audio import SAMPLE_RATE, N_FRAMES, HOP_LENGTH, pad_or_trim, log_mel_spectrogram
 from .decoding import DecodingOptions, DecodingResult
 from .tokenizer import LANGUAGES, TO_LANGUAGE_CODE, get_tokenizer
-from .utils import exact_div, format_timestamp, optional_int, optional_float, str2bool, write_vtt
+from .utils import exact_div, format_timestamp, optional_int, optional_float, str2bool, write_srt, write_vtt
 
 if TYPE_CHECKING:
     from .model import Whisper
@@ -283,6 +283,10 @@ def cli():
         # save VTT
         with open(os.path.join(output_dir, audio_basename + ".vtt"), "w", encoding="utf-8") as vtt:
             write_vtt(result["segments"], file=vtt)
+
+        # save SRT
+        with open(os.path.join(output_dir, audio_basename + ".srt"), "w", encoding="utf-8") as srt:
+            write_srt(result["segments"], file=srt)
 
 
 if __name__ == '__main__':

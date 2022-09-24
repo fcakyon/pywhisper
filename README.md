@@ -6,6 +6,7 @@
 - no need for ffmpeg cli installation, pip install is enough
 - srt export
 - progress bar for `transcribe`
+- continious integration and package testing via github actions
 
 ## setup
 

@@ -1,4 +1,4 @@
-name: CI (PyTorch 1.11.0, TorchVision 0.12.0)
+name: CI (PyTorch 1.12.1)
 on:
   push:
     branches: [main]
@@ -50,13 +50,17 @@ jobs:
       - name: Update pip
         run: python -m pip install --upgrade pip
 
-      - name: Install PyTorch(1.11.0) and TorchVision(0.12.0) on Linux and Windows
+      - name: Install PyTorch(1.12.1) on Linux and Windows
         if: >
           matrix.operating-system == 'ubuntu-latest' ||
           matrix.operating-system == 'windows-latest'
         run: >
-          pip install torch==1.11.0+cpu torchvision==0.12.0+cpu
+          pip install torch==1.12.1+cpu
           -f https://download.pytorch.org/whl/torch_stable.html
+
+      - name: Install PyTorch(1.12.1) on MacOS
+        if: matrix.operating-system == 'macos-latest'
+        run: pip install torch==1.12.1
 
       - name: Install pywhisper package from local setup.py
         run: >
@@ -65,3 +69,7 @@ jobs:
       - name: Unittest
         run: |
           pytest tests
+
+      - name: CLI test
+        run: |
+          pywhisper tests/jfk.flac --model base.en
