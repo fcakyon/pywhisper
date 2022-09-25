@@ -1,5 +1,22 @@
-# pywhisper
-[openai/whisper](https://github.com/openai/whisper) + extra features
+<div align="center">
+<h1>
+  pywhisper
+</h1>
+
+<h4>
+  <a href="https://github.com/openai/whisper">openai/whisper</a> + extra features
+</h4>
+
+<div>
+    <a href="https://badge.fury.io/py/pywhisper"><img src="https://badge.fury.io/py/pywhisper.svg" alt="pypi version"></a>
+    <a href="https://pepy.tech/project/pywhisper"><img src="https://pepy.tech/badge/pywhisper" alt="downloads"></a>
+    <a href="https://github.com/fcakyon/pywhisper/actions/workflows/ci.yml"><img src="https://github.com/fcakyon/yolov5-pip/actions/workflows/ci.yml/badge.svg" alt="ci testing"></a>
+    <a href="https://github.com/fcakyon/pywhisper/actions/workflows/package_testing.yml"><img src="https://github.com/fcakyon/yolov5-pip/actions/workflows/package_testing.yml/badge.svg" alt="package testing"></a>
+    <br>
+    <br>
+    
+</div>
+</div>
 
 ## extra features
 
