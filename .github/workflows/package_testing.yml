@@ -62,12 +62,9 @@ jobs:
         if: matrix.operating-system == 'macos-latest'
         run: pip install torch==1.12.1
 
-      - name: Update pip
-        run: python -m pip install --upgrade pip
-
       - name: Install pywhisper package from pypi
         run: >
-          pip install .[dev]
+          pip install -U pywhisper
 
       - name: Unittest
         run: |
