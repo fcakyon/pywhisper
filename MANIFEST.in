@@ -1,5 +1,5 @@
-include whisper/assets/*
-include whisper/assets/gpt2/*
-include whisper/assets/multilingual/*
-include whisper/normalizers/english.json
+include pywhisper/assets/*
+include pywhisper/assets/gpt2/*
+include pywhisper/assets/multilingual/*
+include pywhisper/normalizers/english.json
 include requirements.txt
