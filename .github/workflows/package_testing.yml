@@ -64,7 +64,7 @@ jobs:
 
       - name: Install pywhisper package from pypi
         run: >
-          pip install -U pywhisper
+          pip install -U pywhisper[dev]
 
       - name: Unittest
         run: |
