@@ -13,10 +13,7 @@ from .decoding import DecodingOptions, DecodingResult, decode, detect_language
 from .model import Whisper, ModelDimensions
 from .transcribe import transcribe
 
-
-__version__ = "1.0.1"
-
-
+__version__ = "1.0.3"
 _MODELS = {
     "tiny.en": "https://openaipublic.azureedge.net/main/whisper/models/d3dd57d32accea0b295c96e26691aa14d8822fac7d9d27d5dc00b4ca2826dd03/tiny.en.pt",
     "tiny": "https://openaipublic.azureedge.net/main/whisper/models/65147644a518d12f04e32d6f3b26facc3f8dd46e5390956a9424a650c0ce22b9/tiny.pt",
