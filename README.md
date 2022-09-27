@@ -4,7 +4,7 @@
 </h1>
 
 <h4>
-  <a href="https://github.com/openai/whisper/tree/5d8d3e75a4826fe5f01205d81c3017a805fc2bf9">openai/whisper</a> + extra features
+  <a href="https://github.com/openai/whisper/tree/b4308c478217f00436c387694e5e848cc87c7fb5">openai/whisper</a> + extra features
 </h4>
 
 <div>
