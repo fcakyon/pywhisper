@@ -14,7 +14,7 @@ from .model import Whisper, ModelDimensions
 from .transcribe import transcribe
 
 
-__version__ = "1.0.4"
+__version__ = "1.0.5"
 
 _MODELS = {
     "tiny.en": "https://openaipublic.azureedge.net/main/whisper/models/d3dd57d32accea0b295c96e26691aa14d8822fac7d9d27d5dc00b4ca2826dd03/tiny.en.pt",
@@ -92,7 +92,10 @@ def load_model(name: str, device: Optional[Union[str, torch.device]] = None, dow
     if device is None:
         device = "cuda" if torch.cuda.is_available() else "cpu"
     if download_root is None:
-        download_root = os.path.join(os.path.expanduser("~"), ".cache", "whisper")
+        download_root = os.getenv(
+            "XDG_CACHE_HOME", 
+            os.path.join(os.path.expanduser("~"), ".cache", "whisper")
+        )
 
     if name in _MODELS:
         checkpoint_file = _download(_MODELS[name], download_root, in_memory)
