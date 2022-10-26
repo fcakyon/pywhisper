@@ -12,6 +12,7 @@
     <a href="https://pepy.tech/project/pywhisper"><img src="https://pepy.tech/badge/pywhisper" alt="downloads"></a>
     <a href="https://github.com/fcakyon/pywhisper/actions/workflows/ci.yml"><img src="https://github.com/fcakyon/yolov5-pip/actions/workflows/ci.yml/badge.svg" alt="ci testing"></a>
     <a href="https://github.com/fcakyon/pywhisper/actions/workflows/package_testing.yml"><img src="https://github.com/fcakyon/yolov5-pip/actions/workflows/package_testing.yml/badge.svg" alt="package testing"></a>
+    <a href="https://twitter.com/fcakyon"><img src="https://img.shields.io/twitter/follow/fcakyon?color=blue&logo=twitter&style=flat" alt="fcakyon twitter"></a>
     <br>
     <br>
     
