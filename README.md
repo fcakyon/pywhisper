@@ -4,7 +4,7 @@
 </h1>
 
 <h4>
-  <a href="https://github.com/openai/whisper/tree/d18e9ea5dd2ca57c697e8e55f9e654f06ede25d0">openai/whisper</a> + extra features
+  <a href="https://github.com/openai/whisper/tree/9f70a352f9f8630ab3aa0d06af5cb9532bd8c21d">openai/whisper</a> + extra features
 </h4>
 
 <div>
@@ -20,9 +20,8 @@
 
 ## extra features
 
+- easy installation from pypi
 - no need for ffmpeg cli installation, pip install is enough
-- srt export
-- progress bar for `transcribe`
 - continious integration and package testing via github actions
 
 ## setup
