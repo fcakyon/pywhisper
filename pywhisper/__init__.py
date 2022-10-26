@@ -14,7 +14,7 @@ from .model import Whisper, ModelDimensions
 from .transcribe import transcribe
 
 
-__version__ = "1.0.5"
+__version__ = "1.0.6"
 
 _MODELS = {
     "tiny.en": "https://openaipublic.azureedge.net/main/whisper/models/d3dd57d32accea0b295c96e26691aa14d8822fac7d9d27d5dc00b4ca2826dd03/tiny.en.pt",
