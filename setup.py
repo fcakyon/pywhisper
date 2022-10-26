@@ -25,9 +25,12 @@ setup(
     version=get_version(),
     description="openai/whisper speech to text model + extra features",
     author="fcakyon",
+    url="https://github.com/fcakyon/pywhisper",
     long_description=get_long_description(),
     long_description_content_type="text/markdown",
     packages=find_packages(exclude=["tests*"]),
+    python_requires=">=3.7",
+    license="MIT",
     install_requires=[
         str(r)
         for r in pkg_resources.parse_requirements(
